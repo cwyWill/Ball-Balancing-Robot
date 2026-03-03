@@ -6,10 +6,10 @@ The project is implemented on a Raspberry Pi 5 and a rpi camera, and the robot i
 
 ### Localization
 Four AprilTags are attached to the localized the position of the ball with this formula:
-$$
+```math
 p_x =\vec{v_x} \cdot \vec{v_B} \\
 p_y =\vec{v_y} \cdot \vec{v_B}
-$$
+```
 ![ball_localization](./fig/localization.png)
 
 ### Closed-Loop Control
@@ -22,6 +22,6 @@ Assume the origin is the stable point (can be any point on the platform). We can
 
 Then the tilting angle can be determined with a single PID controller.
 
-[Demo video]
+[![Demo video](https://img.youtube.com/vi/XOHmK8uWDkU/0.jpg)](https://www.youtube.com/watch?v=XOHmK8uWDkU)
 
 
